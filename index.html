@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nurselog｜長田裕乃</title>
+<style>
+  :root{
+    --ink:#0f1c22;
+    --panel:#132832;
+    --ice:#7ec8e3;
+    --ice-soft:#bfe4f2;
+    --paper:#eef6f8;
+    --line:rgba(126,200,227,0.28);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+    line-height:1.7;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px 60px;
+  }
+  .mark{
+    font-size:13px;
+    letter-spacing:0.14em;
+    color:var(--ice);
+    margin-bottom:6px;
+  }
+  .byline{
+    font-size:12px;
+    color:rgba(238,246,248,0.55);
+    margin-bottom:48px;
+  }
+  h1{
+    font-size:22px;
+    font-weight:600;
+    text-align:center;
+    max-width:320px;
+    margin:0 0 40px;
+    color:var(--paper);
+  }
+  .paths{
+    width:100%;
+    max-width:380px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  a.card, .card{
+    display:block;
+    text-decoration:none;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:24px 22px;
+    color:var(--paper);
+    position:relative;
+    transition:border-color 0.2s ease, transform 0.2s ease;
+  }
+  a.card:active{
+    transform:scale(0.98);
+  }
+  .card .kicker{
+    font-size:12px;
+    color:var(--ice-soft);
+    margin-bottom:8px;
+  }
+  .card h2{
+    font-size:18px;
+    margin:0 0 8px;
+    color:var(--paper);
+  }
+  .card p{
+    font-size:13.5px;
+    color:rgba(238,246,248,0.75);
+    margin:0 0 14px;
+  }
+  .card .go{
+    font-size:13px;
+    color:var(--ice);
+  }
+  .card ul{
+    list-style:none;
+    margin:0 0 14px;
+    padding:0;
+    font-size:13.5px;
+    color:rgba(238,246,248,0.8);
+  }
+  .card ul li{
+    padding-left:14px;
+    position:relative;
+    margin-bottom:5px;
+  }
+  .card ul li::before{
+    content:"–";
+    position:absolute;
+    left:0;
+    color:var(--ice);
+  }
+  .contact-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .contact-row a{
+    flex:1;
+    min-width:140px;
+    text-align:center;
+    text-decoration:none;
+    background:transparent;
+    border:1px solid var(--ice);
+    color:var(--ice-soft);
+    border-radius:3px;
+    padding:11px 10px;
+    font-size:13px;
+  }
+  footer{
+    margin-top:48px;
+    font-size:11.5px;
+    color:rgba(238,246,248,0.4);
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+  <div class="mark">NURSELOG</div>
+  <div class="byline">長田 裕乃 / 訪問看護師・個人開発者</div>
+
+  <div class="paths">
+
+    <a class="card" href="https://materials-topaz.vercel.app/lp.html" target="_blank" rel="noopener">
+      <div class="kicker">薬管理アプリ</div>
+      <h2>のこり</h2>
+      <p>訪問看護のための残薬管理ツール。残薬アラート・受診カレンダー・カルテ転記まで、現場の手間を減らします。</p>
+      <div class="go">サービス紹介を見る ›</div>
+    </a>
+
+    <div class="card">
+      <div class="kicker">ICT研修</div>
+      <h2>サイバーセキュリティ対策</h2>
+      <p>訪問看護ステーションの管理者の方向けに、情報漏洩リスクや監査対応も踏まえた研修をご提供します。内容・形式はご相談の上で設計します。</p>
+      <ul>
+        <li>ステーション運営に沿った実践的な内容</li>
+        <li>形式・時間はご希望に合わせて調整</li>
+      </ul>
+      <div class="contact-row">
+        <a href="mailto:nurselog.app.official@gmail.com?subject=%E3%80%90ICT%E7%A0%94%E4%BF%AE%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" target="_blank" rel="noopener">メールで相談</a>
+        <a href="https://x.com/nurselog_" target="_blank" rel="noopener">Xでdmを送る</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>© 2026 nurselog — 長田 裕乃</footer>
+
+</body>
+</html>
